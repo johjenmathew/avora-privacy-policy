@@ -1,73 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avora Privacy Policy</title>
   <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #142033;
+      --muted: #5c6b80;
+      --accent: #1e5eea;
+      --border: #dbe4f0;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f6f7fb;
-      color: #162033;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.65;
     }
-    main {
+    .wrap {
       max-width: 860px;
-      margin: 48px auto;
-      padding: 32px 20px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
     }
     .card {
-      background: white;
-      border-radius: 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
       padding: 32px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+      box-shadow: 0 12px 40px rgba(20, 32, 51, 0.08);
     }
-    h1, h2 { margin-top: 0; }
-    h2 { margin-top: 28px; }
-    p, li { color: #33415c; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+    .updated {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+    p {
+      margin: 0 0 14px;
+    }
+    ul {
+      margin: 0 0 14px 20px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    code {
+      background: #eef3ff;
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 0.95em;
+    }
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 20px 14px 40px;
+      }
+      .card {
+        padding: 22px;
+        border-radius: 18px;
+      }
+      h1 {
+        font-size: 1.65rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <main>
-    <div class="card">
+  <main class="wrap">
+    <section class="card">
       <h1>Avora Privacy Policy</h1>
-      <p><strong>Last updated:</strong> April 4, 2026</p>
+      <p class="updated">Last updated: April 10, 2026</p>
 
-      <p>Avora is a reminder and task management application. This policy explains what information the app handles, how that information is used, and what choices you have.</p>
+      <p>
+        Avora is a reminder and task management application. This policy explains what information
+        the app handles, how that information is used, and what choices you have.
+      </p>
+
+      <p>
+        This policy applies to the Android app Avora, currently distributed with the package name
+        <code>com.avora.planner</code>.
+      </p>
 
       <h2>1. Information the app handles</h2>
-      <p>Avora stores reminder titles, notes, task names, reminder dates and times, repeat settings, task state, app appearance settings, and app language settings on your device so the app can function.</p>
-      <p>If you use the optional "Call someone" reminder feature, Avora opens Android's system contact picker. Avora does not request broad contacts access. Avora only receives the contact name and phone number that you explicitly choose through the picker.</p>
+      <p>
+        Avora stores reminder titles, notes, task names, reminder dates and times, repeat settings,
+        task state, app appearance settings, and app language settings on the device so the app can function.
+      </p>
+      <p>
+        If the user enables the optional "Call someone" reminder feature, Avora opens Android's
+        system contact picker. Avora does not request broad contacts access. Avora only receives
+        the contact name and phone number that the user explicitly chooses through the picker.
+      </p>
+      <p>Avora does not require account sign-in in the current implementation.</p>
 
       <h2>2. How information is used</h2>
-      <p>Avora uses your reminder, task, and contact-selection data only to provide core app features such as:</p>
+      <p>Avora uses reminder, task, and contact-selection data only to provide core app features such as:</p>
       <ul>
         <li>showing reminders and tasks in the app</li>
         <li>scheduling alerts and lock-screen alarm experiences</li>
         <li>reopening the phone dialer for call reminders</li>
-        <li>restoring your information after device reboot</li>
-        <li>applying your selected theme and language preferences</li>
+        <li>restoring information after device reboot</li>
+        <li>applying selected theme and language preferences</li>
       </ul>
 
       <h2>3. Data sharing</h2>
-      <p>Avora does not sell your personal information.</p>
-      <p>Avora does not share your reminders, tasks, or selected contact information with third parties from within the current app implementation.</p>
+      <p>Avora does not sell personal information.</p>
+      <p>
+        Avora does not share reminders, tasks, or selected contact information with third parties
+        in the current app implementation.
+      </p>
+      <p>Avora does not include advertising SDKs or analytics SDKs in the current app implementation.</p>
 
       <h2>4. Data storage and retention</h2>
-      <p>Your reminder and task data is stored locally on your device in the app's private storage.</p>
-      <p>Data remains on your device until you edit it, delete it, clear the app's data, or uninstall the app.</p>
+      <p>Reminder and task data is stored locally on the device in the app's private storage.</p>
+      <p>
+        Avora does not transmit reminder, task, or selected contact data to developer-operated
+        servers in the current app implementation.
+      </p>
+      <p>
+        Data remains on the device until it is edited, deleted, cleared through app-data removal,
+        or removed by uninstalling the app.
+      </p>
 
       <h2>5. Permissions and device capabilities</h2>
-      <p>Avora may request or rely on the following Android permissions and capabilities:</p>
+      <p>Avora may request or rely on:</p>
       <ul>
-        <li>Notifications, to deliver reminder alerts</li>
-        <li>Exact alarms, to trigger reminders at the scheduled time</li>
-        <li>Full-screen intent, to present alarm UI when appropriate</li>
-        <li>Wake lock and boot completed support, to reschedule and deliver alarms reliably after restart</li>
+        <li>notifications</li>
+        <li>exact alarms</li>
+        <li>full-screen intent</li>
+        <li>wake lock</li>
+        <li>boot completed support</li>
       </ul>
-      <p>Avora does not request READ_CONTACTS or CALL_PHONE. Contact selection uses the Android system picker, and calling uses the system dialer.</p>
+      <p>
+        Avora does not request <code>READ_CONTACTS</code> or <code>CALL_PHONE</code>. Contact
+        selection uses the Android system picker, and calling uses the system dialer.
+      </p>
 
-      <h2>6. Your choices</h2>
+      <h2>6. User choices</h2>
+      <p>Users can:</p>
       <ul>
         <li>delete reminders and tasks from within the app</li>
         <li>disable or deny notification and alarm-related access in Android settings</li>
@@ -75,15 +173,23 @@
       </ul>
 
       <h2>7. Children's privacy</h2>
-      <p>Avora is not directed to children under the age required by applicable law in your region, and the app is not designed to knowingly collect personal information from children.</p>
+      <p>
+        Avora is not directed to children under the age required by applicable law in the user's region
+        and is not designed to knowingly collect personal information from children.
+      </p>
 
-      <h2>8. Changes to this policy</h2>
-      <p>This policy may be updated to reflect product, legal, or platform changes. The latest version should also be published on the public privacy policy URL used for app distribution.</p>
+      <h2>8. Policy changes</h2>
+      <p>
+        This policy may be updated to reflect product, legal, or platform changes. The hosted privacy
+        policy URL used in Google Play should always match the latest approved version.
+      </p>
 
       <h2>9. Contact</h2>
       <p>If you have questions about this policy, contact:</p>
-      <p>johjen.mathew@gmail.com</p>
-    </div>
+      <p><a href="mailto:johjen.mathew@gmail.com">johjen.mathew@gmail.com</a></p>
+
+      <p class="footer">Avora</p>
+    </section>
   </main>
 </body>
 </html>
