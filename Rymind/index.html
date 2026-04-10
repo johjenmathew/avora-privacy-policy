@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rymind Privacy Policy</title>
+  <meta
+    name="description"
+    content="Privacy Policy for Rymind, the reminder and task management app."
+  />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef3f9;
+      --surface: rgba(255, 255, 255, 0.88);
+      --surface-border: rgba(18, 35, 58, 0.08);
+      --text: #11243b;
+      --muted: #5c6f87;
+      --accent: #2e6fd8;
+      --accent-deep: #173a63;
+      --highlight: #e2b472;
+      --shadow: 0 24px 60px rgba(14, 28, 48, 0.12);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "SF Pro Display", "Segoe UI", Inter, system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(46, 111, 216, 0.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(226, 180, 114, 0.18), transparent 24%),
+        linear-gradient(180deg, #f6f9fc 0%, var(--bg) 100%);
+      line-height: 1.65;
+      padding: 32px 20px 72px;
+    }
+
+    .shell {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      padding: 28px 28px 24px;
+      background: linear-gradient(135deg, #15355b 0%, #2d6fd8 58%, #5f9cff 100%);
+      color: #f8fbff;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0));
+      pointer-events: none;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .brand-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(14px);
+    }
+
+    .brand-mark svg {
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(248, 251, 255, 0.76);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 3.6vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      max-width: 640px;
+      color: rgba(248, 251, 255, 0.88);
+      font-size: 1.02rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #f8fbff;
+      font-size: 0.92rem;
+    }
+
+    .card {
+      margin-top: 22px;
+      padding: 30px 28px;
+      border-radius: var(--radius-xl);
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.16rem;
+      color: var(--accent-deep);
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .section + .section {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(18, 35, 58, 0.08);
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      border-radius: var(--radius-lg);
+      background: rgba(46, 111, 216, 0.08);
+      border: 1px solid rgba(46, 111, 216, 0.12);
+      color: var(--accent-deep);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      text-align: center;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 20px 14px 48px;
+      }
+
+      .hero,
+      .card {
+        padding: 22px 18px;
+        border-radius: 24px;
+      }
+
+      .brand {
+        gap: 12px;
+      }
+
+      .brand-mark {
+        width: 46px;
+        height: 46px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.43 6.33A7.2 7.2 0 1 1 8.19 5.89" stroke="#F7F1E6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.96 8.22A4.8 4.8 0 1 1 9.46 7.93" stroke="#F7F1E6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="17.85" cy="6.1" r="1.95" fill="#E2B472"/>
+          </svg>
+        </div>
+        <div>
+          <p class="eyebrow">Privacy Policy</p>
+          <h1>Rymind</h1>
+        </div>
+      </div>
+      <p class="subtitle">
+        Rymind is a reminder and task management app. This page explains what information the app handles,
+        how it is used, and the choices available to users.
+      </p>
+      <div class="meta">
+        <div class="chip">Last updated: April 10, 2026</div>
+        <div class="chip">Package: com.avora.planner</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section">
+        <h2>1. Information the app handles</h2>
+        <p>
+          Rymind stores reminder titles, notes, task names, reminder dates and times, repeat settings,
+          task state, app appearance settings, and app language settings on the device so the app can function.
+        </p>
+        <p>
+          If the user enables the optional "Call someone" reminder feature, Rymind opens Android's system
+          contact picker. Rymind does not request broad contacts access. It only receives the contact name
+          and phone number that the user explicitly chooses through the picker.
+        </p>
+        <p>Rymind does not require account sign-in in the current implementation.</p>
+      </div>
+
+      <div class="section">
+        <h2>2. How information is used</h2>
+        <p>Rymind uses reminder, task, and contact-selection data only to provide core app features such as:</p>
+        <ul>
+          <li>showing reminders and tasks in the app</li>
+          <li>scheduling alerts and lock-screen alarm experiences</li>
+          <li>reopening the phone dialer for call reminders</li>
+          <li>restoring information after device reboot</li>
+          <li>applying selected theme and language preferences</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>3. Data sharing</h2>
+        <p>Rymind does not sell personal information.</p>
+        <p>Rymind does not share reminders, tasks, or selected contact information with third parties in the current app implementation.</p>
+        <p>Rymind does not include advertising SDKs or analytics SDKs in the current app implementation.</p>
+      </div>
+
+      <div class="section">
+        <h2>4. Data storage and retention</h2>
+        <p>Reminder and task data is stored locally on the device in the app's private storage.</p>
+        <p>Rymind does not transmit reminder, task, or selected contact data to developer-operated servers in the current app implementation.</p>
+        <p>Data remains on the device until it is edited, deleted, cleared through app-data removal, or removed by uninstalling the app.</p>
+      </div>
+
+      <div class="section">
+        <h2>5. Permissions and device capabilities</h2>
+        <p>Rymind may request or rely on:</p>
+        <ul>
+          <li>notifications</li>
+          <li>exact alarms</li>
+          <li>full-screen intent</li>
+          <li>wake lock</li>
+          <li>boot completed support</li>
+        </ul>
+        <p>Rymind does not request <code>READ_CONTACTS</code> or <code>CALL_PHONE</code>. Contact selection uses the Android system picker, and calling uses the system dialer.</p>
+      </div>
+
+      <div class="section">
+        <h2>6. User choices</h2>
+        <ul>
+          <li>delete reminders and tasks from within the app</li>
+          <li>disable or deny notification and alarm-related access in Android settings</li>
+          <li>clear app data or uninstall the app to remove locally stored data</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>7. Children's privacy</h2>
+        <p>
+          Rymind is not directed to children under the age required by applicable law in the user's region
+          and is not designed to knowingly collect personal information from children.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>8. Policy changes</h2>
+        <p>
+          This policy may be updated to reflect product, legal, or platform changes. The hosted privacy policy
+          URL used in Google Play should always match the latest approved version.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>9. Contact</h2>
+        <a class="contact" href="mailto:johjen.mathew@gmail.com">johjen.mathew@gmail.com</a>
+      </div>
+    </section>
+
+    <p class="footer">Rymind Privacy Policy</p>
+  </main>
+</body>
+</html>
